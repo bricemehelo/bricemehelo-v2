@@ -3,7 +3,10 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <section className="grid flex-1 grid-cols-1 md:grid-cols-2">
-          <div className="flex flex-col justify-center gap-6 px-8 py-24 md:px-16"></div>
+          <div className="flex flex-col justify-center gap-6 px-8 py-24 md:px-16">
+            <h1>Brice Mehelo</h1>
+            <p>Software / ai engineer - [online pitch ]</p>
+          </div>
         </section>
       </main>
     </div>
