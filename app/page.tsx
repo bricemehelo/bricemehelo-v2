@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Brice Mehelo - Senior AI Product Engineer / Senior Saas Engineer",
+  title: "Brice Mehelo - Senior AI Product Engineer / Senior SaaS Engineer",
   description: "Brice Mehelo — AI Engineering & Business Transformation Lab",
 };
 
