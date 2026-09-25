@@ -18,7 +18,7 @@ export default function Home() {
               Software / ai engineer - [online pitch ]
             </p>
           </div>
-          <div>{/** TODO:: AI concierge chat panel */}</div>
+          <div>{/** TODO: AI concierge chat panel */}</div>
         </section>
       </main>
     </div>
