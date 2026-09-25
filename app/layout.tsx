@@ -13,10 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brice Mehelo - Senior AI Product Engineer / Senior Saas Engineer",
-  description: "GBrice Mehelo — AI Engineering & Business Transformation Lab”",
+  title: "Brice Mehelo - Senior AI Product Engineer / Senior SaaS Engineer",
+  description: "Brice Mehelo — AI Engineering & Business Transformation Lab",
 };
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
