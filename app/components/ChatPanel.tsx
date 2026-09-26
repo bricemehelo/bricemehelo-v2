@@ -24,4 +24,11 @@ export default function ChatPanel() {
     setMessages((prev) => [...prev, { role: "user", content: draft }]);
     setDraft("");
   }
+
+  return(
+    <div className="flex h-full w-full max-w-md flex-col gap-4 rounded-2xl border border-zinc-200 p-6 dark:border-zinc-800">
+      <ul className="flex flex-1 flex-col gap-3 overflow-y-auto">
+            
+        </ul>
+    </div>
 }
