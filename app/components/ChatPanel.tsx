@@ -41,5 +41,23 @@ export default function ChatPanel() {
                 </li>
             ))}
         </ul>
+        <form onSubmit={handleSubmit} className="flex gap-2">
+            <label htmlFor="chat-input" className="sr-only">
+                Ask a question
+            </label>
+            <input
+                type="text"
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+                placeholder="Type your message..."
+                className="flex-1 rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm text-zinc-900 placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-500 dark:placeholder:text-zinc-400"
+            />
+            <button
+                type="submit"
+                className="rounded-lg bg-blue-500 px-4 py-2 text-sm text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+                Send
+            </button>
+        </form>
     </div>
 }
