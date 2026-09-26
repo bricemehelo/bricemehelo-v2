@@ -14,6 +14,14 @@ const initialMessages: Message[] = [
 ];
 
 export default function ChatPanel() {
-  const [messages, setMesssages] = useState<Message[]>(initialMessages);
+  const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [draft, setDraft] = useState<string>("");
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!draft.trim()) return;
+
+    setMessages((prev) => [...prev, { role: "user", content: draft }]);
+    setDraft("");
+  }
 }
