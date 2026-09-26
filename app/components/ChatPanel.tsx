@@ -12,3 +12,8 @@ const initialMessages: Message[] = [
     content: "Hi, I'm Brice's AI concierge. Ask me anything about his work.",
   },
 ];
+
+export default function ChatPanel() {
+  const [messages, setMesssages] = useState<Message[]>(initialMessages);
+  const [draft, setDraft] = useState<string>("");
+}
