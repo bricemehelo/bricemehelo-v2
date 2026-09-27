@@ -15,7 +15,7 @@ describe("ChatPanel", () => {
     const user = userEvent.setup();
     render(<ChatPanel />);
 
-    const input = screen.getByLabelText(/ask question/i);
+    const input = screen.getByLabelText(/ask a question/i);
     await user.type(input, "What projects has Brice shipped?");
     await user.click(screen.getByRole("button", { name: /send/i }));
 

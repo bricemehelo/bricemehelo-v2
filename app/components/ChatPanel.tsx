@@ -25,40 +25,41 @@ export default function ChatPanel() {
     setDraft("");
   }
 
-  return(
+  return (
     <div className="flex h-full w-full max-w-md flex-col gap-4 rounded-2xl border border-zinc-200 p-6 dark:border-zinc-800">
       <ul className="flex flex-1 flex-col gap-3 overflow-y-auto">
-            {messages.map((message,index)=>(
-                <li
-                key={index}
+        {messages.map((message, index) => (
+          <li
+            key={index}
             className={
               message.role === "user"
                 ? "self-end rounded-lg bg-zinc-900 px-3 py-2 text-sm text-white dark:bg-zinc-50 dark:text-black"
                 : "self-start rounded-lg bg-zinc-100 px-3 py-2 text-sm text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50"
-                }
-                >
-                    {message.content}
-                </li>
-            ))}
-        </ul>
-        <form onSubmit={handleSubmit} className="flex gap-2">
-            <label htmlFor="chat-input" className="sr-only">
-                Ask a question
-            </label>
-            <input
-                id="chat-input"
-                type="text"
-                value={draft}
-                onChange={(e) => setDraft(e.target.value)}
-                placeholder="Ask about Brice's work..."
+            }
+          >
+            {message.content}
+          </li>
+        ))}
+      </ul>
+      <form onSubmit={handleSubmit} className="flex gap-2">
+        <label htmlFor="chat-input" className="sr-only">
+          Ask a question
+        </label>
+        <input
+          id="chat-input"
+          type="text"
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          placeholder="Ask about Brice's work..."
           className="flex-1 rounded-lg border border-zinc-300 px-3 py-2 text-sm dark:border-zinc-700 dark:bg-black"
-            />
-            <button
-                type="submit"
-                className="rounded-lg bg-blue-500 px-4 py-2 text-sm text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-                Send
-            </button>
-        </form>
+        />
+        <button
+          type="submit"
+          className="rounded-lg bg-blue-500 px-4 py-2 text-sm text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          Send
+        </button>
+      </form>
     </div>
+  );
 }
