@@ -22,5 +22,6 @@ describe("ChatPanel", () => {
     expect(
       screen.getByText("What projects has Brice shipped?"),
     ).toBeInTheDocument();
+    expect(input).toHaveValue("");
   });
 });
