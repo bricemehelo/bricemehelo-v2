@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import ChatPanel from "./components/ChatPanel";
 
 export const metadata: Metadata = {
   title: "Brice Mehelo - Senior AI Product Engineer / Senior SaaS Engineer",
@@ -18,7 +19,9 @@ export default function Home() {
               Software / ai engineer - [online pitch ]
             </p>
           </div>
-          <div>{/* TODO: AI concierge chat panel */}</div>
+          <div className="flex items-center justify-center px-8 py-24 md:px-16">
+            <ChatPanel />
+          </div>
         </section>
       </main>
     </div>
