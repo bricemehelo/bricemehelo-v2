@@ -17,5 +17,6 @@ describe("ChatPanel", () => {
 
     const input = screen.getByLabelText(/ask question/i);
     await user.type(input, "What projects has Brice shipped?");
+    await user.click(screen.getByRole("button", { name: /send/i }));
   });
 });
