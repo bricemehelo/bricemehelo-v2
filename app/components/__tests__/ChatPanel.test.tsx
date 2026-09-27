@@ -7,9 +7,14 @@ describe("ChatPanel", () => {
   it("renders the initial assistant message", () => {
     render(<ChatPanel />);
     expect(
-        screen.getByText(/ask me anything about his work/i),
+      screen.getByText(/ask me anything about his work/i),
     ).toBeInTheDocument();
-  }
-    );
+  });
+
+  it("adds a user message to the list on submit", async () => {
+    const user = userEvent.setup();
+    render(<ChatPanel />);
+
+    const input = screen.getByLabelText(/ask question/i);
   });
 });
