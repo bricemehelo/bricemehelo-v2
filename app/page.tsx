@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ChatPanel from "./components/ChatPanel";
 
 export const metadata: Metadata = {
-  title: "Brice Mehelo — Senior Full Stack Engineer & SaaS Founder",
+  title: "Brice Mehelo - AI Product Engineer / Senior Full Stack SaaS Engineer",
   description: "Brice Mehelo — AI Engineering & Business Transformation Lab",
 };
 
@@ -47,7 +47,8 @@ export default function Home() {
           </h1>
           <div className="flex flex-col gap-6 pt-10 md:flex-row md:items-end md:justify-between">
             <div className="max-w-[600px] text-[27px]">
-              Senior Full Stack Engineer &amp; SaaS Founder
+              AI Product Engineer / Senior Full Stack SaaS Engineer &amp; SaaS
+              Founder
             </div>
             <div className="text-[13px] uppercase leading-[1.9] tracking-[0.06em] text-cream/78 md:text-right">
               iZone5 → iHub Connect
