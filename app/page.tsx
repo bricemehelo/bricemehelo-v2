@@ -41,8 +41,7 @@ export default function Home() {
             <span>Available for one engagement — Q4 2026</span>
           </div>
           <h1 className="m-0 text-6xl font-light uppercase leading-[0.82] tracking-[-0.03em] md:text-8xl lg:text-[164px]">
-            Brice
-            <br />
+            Brice <br />
             Mehelo
           </h1>
           <div className="flex flex-col gap-6 pt-10 md:flex-row md:items-end md:justify-between">
