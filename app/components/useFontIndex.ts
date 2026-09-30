@@ -7,5 +7,7 @@ export function useFrontIndex(count: number, cycleMs: number) {
     const prefersReduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce",
     ).matches;
+
+    if (prefersReduceMotion) return;
   }, [count, cycleMs]);
 }
