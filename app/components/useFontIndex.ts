@@ -9,5 +9,9 @@ export function useFrontIndex(count: number, cycleMs: number) {
     ).matches;
 
     if (prefersReduceMotion) return;
+
+    const id = setInterval(() => {
+      setFront((current) => (current + 1) % count);
+    }, cycleMs);
   }, [count, cycleMs]);
 }
