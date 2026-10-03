@@ -32,3 +32,4 @@ describe("useFrontIndex", () => {
 
     expect(result.current[0]).toBe(1);
   });
+});
