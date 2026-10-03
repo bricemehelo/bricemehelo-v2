@@ -40,5 +40,22 @@ describe("useFrontIndex", () => {
     act(() => {
       vi.advanceTimersByTime(2800 * 6);
     }
+
+    expect(result.current[0]).toBe(0);
+
   });
+
+
+   it("can be set directly, for the manual button grid", () => {
+    mockMatchMedia(false);
+    const { result } = renderHook(() => useFrontIndex(6, 2800));
+
+    act(() => {
+      result.current[1](4);
+    });
+
+    expect(result.current[0]).toBe(4);
+  });
+
+
 });
