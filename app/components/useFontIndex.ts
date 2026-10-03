@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { clearInterval } from "timers";
 
 export function useFrontIndex(count: number, cycleMs: number) {
   const [front, setFront] = useState(0);
 
   useEffect(() => {
     const prefersReduceMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce",
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     if (prefersReduceMotion) return;
