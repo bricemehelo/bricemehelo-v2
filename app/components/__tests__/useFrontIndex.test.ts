@@ -36,5 +36,9 @@ describe("useFrontIndex", () => {
   it("wraps aaround afert the last card", () => {
     mockMatchMedia(false);
     const { result } = renderHook(() => useFrontIndex(6, 2800));
+
+    act(() => {
+      vi.advanceTimersByTime(2800 * 6);
+    }
   });
 });
