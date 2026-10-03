@@ -1,6 +1,6 @@
 import { renderHook, act } from "@testing-library/react";
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { useFrontIndex } from "../useFrontIndex";
+import { useFrontIndex } from "../useFontIndex";
 
 function mockMatchMedia(reducedMotion: boolean) {
   window.matchMedia = vi.fn().mockImplementation((query: string) => ({
