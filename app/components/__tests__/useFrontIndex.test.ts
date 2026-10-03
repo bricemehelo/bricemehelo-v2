@@ -32,4 +32,9 @@ describe("useFrontIndex", () => {
 
     expect(result.current[0]).toBe(1);
   });
+
+  it("wraps aaround afert the last card", () => {
+    mockMatchMedia(false);
+    const { result } = renderHook(() => useFrontIndex(6, 2800));
+  });
 });
